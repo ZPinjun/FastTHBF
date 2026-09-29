@@ -1,0 +1,69 @@
+{
+  "deepmimo_package": "4.0.0b11",
+  "groups": {
+    "train": [
+      "city_0_newyork_28",
+      "city_1_losangeles_28",
+      "city_2_chicago_28"
+    ],
+    "test": [
+      "city_6_miami_28"
+    ],
+    "generalization": [
+      "city_6_miami_28",
+      "city_10_austin_28",
+      "city_13_columbus_28",
+      "city_8_dallas_28"
+    ]
+  },
+  "cities": {
+    "Miami": "city_6_miami_28",
+    "Austin": "city_10_austin_28",
+    "Columbus": "city_13_columbus_28",
+    "Dallas": "city_8_dallas_28"
+  },
+  "local_reference": {
+    "city_0_newyork_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "a9aeada6f0ed832799ac248b205ba85435dc7c1d5981cbf7f289ed71e969d230",
+      "files": 135,
+      "uncompressed_bytes": 163181626
+    },
+    "city_1_losangeles_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "16f43321aec2cf78bb3790d61b01219773b21a25d251e69891244abd08071118",
+      "files": 135,
+      "uncompressed_bytes": 146780253
+    },
+    "city_2_chicago_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "44bfdd98a00998daf9374a032666f45bade55d363bf82829e0c3f1e4eeb24502",
+      "files": 135,
+      "uncompressed_bytes": 142902941
+    },
+    "city_6_miami_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "6302d06b839bc87d3b679bf527d60911083969cf495fb0a8c1e7a2e6098b2e08",
+      "files": 135,
+      "uncompressed_bytes": 220943919
+    },
+    "city_10_austin_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "a613bce825779977ba85d03c81f6433243a977f0b3fed97133264d921ea8595b",
+      "files": 135,
+      "uncompressed_bytes": 179616413
+    },
+    "city_13_columbus_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "3db13491ead53e0e43bfab7e759914926a69e4e274759f332c42c26a8c04907a",
+      "files": 135,
+      "uncompressed_bytes": 219589117
+    },
+    "city_8_dallas_28": {
+      "conversion_version": "4.0.0a3",
+      "params_sha256": "25616d3458e97b3727487c7129236839692e0235bbd28dc4fc9a1d562cfa6159",
+      "files": 135,
+      "uncompressed_bytes": 202144927
+    }
+  }
+}

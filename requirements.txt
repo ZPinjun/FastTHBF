@@ -1,0 +1,12 @@
+# Versions verified on Python 3.11.13, macOS arm64.
+torch==2.5.1
+numpy==2.3.4
+scipy==1.16.1
+matplotlib==3.10.7
+pymanopt==2.2.1
+autograd==1.8.0
+tqdm==4.67.1
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==6.29.5
+jupyterlab==4.3.4

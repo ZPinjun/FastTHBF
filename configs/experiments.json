@@ -1,0 +1,91 @@
+{
+  "Fig00": {
+    "seed": 42,
+    "users": 3,
+    "classical_plot_iterations": 200,
+    "classical_runtime_iterations": [
+      40,
+      100,
+      160
+    ],
+    "hybrid_plot_iterations": 60,
+    "hybrid_runtime_iterations": [
+      15,
+      30,
+      45
+    ],
+    "runtime_trials": 20,
+    "rf_chains": 10
+  },
+  "Fig01": {
+    "seed": 42,
+    "batch_size": 50,
+    "layers": 3,
+    "learning_rate": 0.001,
+    "max_batches": 300,
+    "instances": 20000
+  },
+  "Fig02": {
+    "seed": 42,
+    "classical_iterations": [
+      4,
+      10,
+      50,
+      200
+    ],
+    "unfolded_layers": [
+      2,
+      3,
+      4
+    ],
+    "max_instances": null,
+    "rf_chains": 10
+  },
+  "Fig03": {
+    "seed": 0,
+    "samples": 16,
+    "unfolded_layers": [
+      2,
+      4,
+      6
+    ],
+    "rf_chains": 10
+  },
+  "Fig04": {
+    "seed": 42,
+    "samples": 100,
+    "unfolded_layers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rf_chains": 10
+  },
+  "Fig05": {
+    "seed": 42,
+    "samples": 1000,
+    "unfolded_layers": [
+      2,
+      4
+    ],
+    "classical_iterations": [
+      50,
+      200
+    ],
+    "nmse_points": 6,
+    "rf_chains": 10
+  },
+  "Fig06": {
+    "seed": 42,
+    "rf_chains": 10,
+    "unfolded_layers": [
+      2,
+      4,
+      6
+    ],
+    "max_instances": null
+  }
+}

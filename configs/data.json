@@ -1,0 +1,19 @@
+{
+  "Nt": 20,
+  "Nc": 5,
+  "carrier_hz": 28000000000.0,
+  "bandwidth_hz": 20000000.0,
+  "streams_per_user": 2,
+  "ue_antennas": 4,
+  "power_dbm": 0,
+  "attenuation_per_m": 0.6,
+  "subcarriers": 40,
+  "selected_subcarriers": [
+    0
+  ],
+  "dataset_index": 1,
+  "power_threshold_dbm": -140,
+  "seed": 42,
+  "test_instances": 1000,
+  "city_instances": 100
+}

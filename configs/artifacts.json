@@ -1,0 +1,124 @@
+{
+  "version": "public-preparation-1",
+  "weights": [
+    {
+      "file": "checkpoints/unfolded_wmmse_model_2Iter.pt",
+      "bytes": 5484386,
+      "sha256": "3ba64374c010f57f5d758542effae8191e6042a66577eef5b5b308bfe485a44f",
+      "layers": 2,
+      "input_dimension": 801,
+      "trainable_parameters": 1367166,
+      "optimizer_state_included": false
+    },
+    {
+      "file": "checkpoints/unfolded_wmmse_model_3Iter.pt",
+      "bytes": 8226306,
+      "sha256": "9103e18d61428e5f226780b46cd2efdaf4d9622f50c8da09fad1acb5a7a17c48",
+      "layers": 3,
+      "input_dimension": 801,
+      "trainable_parameters": 2050749,
+      "optimizer_state_included": false
+    },
+    {
+      "file": "checkpoints/unfolded_wmmse_model_4Iter.pt",
+      "bytes": 10968226,
+      "sha256": "13f571e4cb0814de56c6644ecc224d72d7d1c64091e92a6f0c62569e2aea29d7",
+      "layers": 4,
+      "input_dimension": 801,
+      "trainable_parameters": 2734332,
+      "optimizer_state_included": false
+    },
+    {
+      "file": "checkpoints/unfolded_wmmse_model_5Iter.pt",
+      "bytes": 13710220,
+      "sha256": "b5b3919d18396b11c13918c8a146fb9f458c56cb72535583018b03b0e7c62105",
+      "layers": 5,
+      "input_dimension": 801,
+      "trainable_parameters": 3417915,
+      "optimizer_state_included": false
+    },
+    {
+      "file": "checkpoints/unfolded_wmmse_model_6Iter.pt",
+      "bytes": 16452162,
+      "sha256": "862f3e8ea5551b7f5cf0da420f6d70ce9d0fa01f678e0208fc1d49b2748276f8",
+      "layers": 6,
+      "input_dimension": 801,
+      "trainable_parameters": 4101498,
+      "optimizer_state_included": false
+    },
+    {
+      "file": "checkpoints/unfolded_wmmse_model_7Iter.pt",
+      "bytes": 19194168,
+      "sha256": "29ef155dce8ec9b3615aedc47d8a9fa7a7539c1dd01704bf70f3da21a97a6e8f",
+      "layers": 7,
+      "input_dimension": 801,
+      "trainable_parameters": 4785081,
+      "optimizer_state_included": false
+    }
+  ],
+  "data": [
+    {
+      "file": "data_Probs/channels_deepMIMO_test.pt",
+      "bytes": 40865383,
+      "sha256": "cefb63cf81d15a939b656f6ce592cefe49cf0a7467f53993d914dde4b902d362",
+      "shape": [
+        12770,
+        4,
+        100,
+        1
+      ],
+      "dtype": "torch.complex64",
+      "tensor_sha256": "3baa0c34322fa215612f6c8dbe816d7ea294abbd1d7946343b5cf2598d436f6b"
+    },
+    {
+      "file": "data_Probs/channels_deepMIMO_train.pt",
+      "bytes": 91505388,
+      "sha256": "6cc93e080e9b3c14dbb5a861e012b8908dd78232d7f365ebcc67c690365d0023",
+      "shape": [
+        28595,
+        4,
+        100,
+        1
+      ],
+      "dtype": "torch.complex64",
+      "tensor_sha256": "0048ed50d2b8b6dc444e5d67acf94092cb801569602c43c3be00e4438b57eb94"
+    },
+    {
+      "file": "data_Probs/parameters.pt",
+      "bytes": 1833,
+      "sha256": "443eba079231cefbb643f79d4efc18f2ccd74461c334df49df0be727a3ea2490",
+      "system_parameters": true
+    },
+    {
+      "file": "data_Probs/probInsts_Austin.pt",
+      "bytes": 1353746,
+      "sha256": "13640855591500c8a350da1b68e4310734cef5beb4238370c291489735108178",
+      "instances": 100
+    },
+    {
+      "file": "data_Probs/probInsts_Columbus.pt",
+      "bytes": 1353954,
+      "sha256": "3cee65de5195e79e7cfabc2c526e464a62646df16cb69710e0008a9e48ddcce9",
+      "instances": 100
+    },
+    {
+      "file": "data_Probs/probInsts_Dallas.pt",
+      "bytes": 1353746,
+      "sha256": "2710418c8fd95f0102813b4ced83c7069e7c0eef9ce30c3eac18f1f08dadd3da",
+      "instances": 100
+    },
+    {
+      "file": "data_Probs/probInsts_Miami.pt",
+      "bytes": 1353642,
+      "sha256": "14a58ad2cf55482e1c42d769be6df6dc5c3e2095d39675498f1c0cf2e40b7c9c",
+      "instances": 100
+    },
+    {
+      "file": "data_Probs/probInsts_test.pt",
+      "bytes": 13407382,
+      "sha256": "58c351570c07265f0b7d0902100a4d25335b38b0a89c5171f7217beb29bf43b0",
+      "instances": 1000
+    }
+  ],
+  "download_urls": null
+}

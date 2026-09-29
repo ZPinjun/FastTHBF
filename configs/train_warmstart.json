@@ -1,0 +1,13 @@
+{
+  "layers": 7,
+  "warm_start_layers": 6,
+  "seed": 42,
+  "epochs": 1,
+  "batch_size": 50,
+  "learning_rate": 0.0002,
+  "instances": 20000,
+  "validation_fraction": 0.0025,
+  "eval_every": 5,
+  "max_batches": null,
+  "overwrite": false
+}

@@ -1,0 +1,2 @@
+-r requirements.txt
+deepmimo==4.0.0b11
