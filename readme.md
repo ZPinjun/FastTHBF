@@ -2,9 +2,9 @@
 
 This repository provides the code for reproducing the main results presented in the following paper:
 
-> Pinjun Zheng, Md. Jahangir Hossain, and Anas Chaaban, “Fast Tri-Hybrid Beamforming via Deep Unfolding,” accepted for publication in IEEE Transactions on Signal Processing.
+> [1] Pinjun Zheng, Md. Jahangir Hossain, and Anas Chaaban, “Fast Tri-Hybrid Beamforming via Deep Unfolding,” accepted for publication in IEEE Transactions on Signal Processing.
 
-This repository supports the experiments listed below and is licensed under MIT.
+This repository supports the experiments listed below and is licensed under MIT. OpenAI Codex assisted with refactoring this codebase, improving its documentation, and preparing it for public release. The authors remain responsible for the reported results.
 
 ## Supported experiments
 
@@ -25,7 +25,7 @@ Table IV were added in response to the reviewers’ requests. These results are 
 
 The code provides two parts:
 
-1. **Network training:** this part prepares channel data, train the GNNs used by the unfolded WMMSE algorithm, and save model checkpoints. The main notebooks are
+1. **Network training:** this part prepares channel data, train the unfolded WMMSE algorithm, and save model checkpoints. The main notebooks are
    `A00_Data_generation.ipynb` and `A01_Train_UWMMSE.ipynb`.
 2. **Numerical simulation and evaluation:** With the trained models, this part evaluates the performance of the considered methods using `Fig00.ipynb` through `Fig06.ipynb`. 
 
@@ -98,12 +98,10 @@ prepare them:
 **Option A: Use the supplied training data.** Download `fthbf-data-v1.zip` from the
 [Google Drive download folder](https://drive.google.com/drive/folders/1zEdSEqWkpc1nvKUOKtuseE9iOGGQOOEe)
 and extract it into the repository root, following the
-[folder layout](#obtain-supplied-data-and-pretrained-weights) below. If these files
-are already present, proceed directly to [training](#train-the-unfolded-networks).
+[folder layout](#obtain-supplied-data-and-pretrained-weights) below. 
 This option skips DeepMIMO scene downloads and channel generation.
 
-**Option B: Generate the training data yourself.** The data ZIP is optional for
-this route. Install the additional dependencies, download the training scenes,
+**Option B: Generate the training data yourself.** Install the additional dependencies, download the training scenes,
 and generate the required files:
 
 ```bash
@@ -152,7 +150,7 @@ python -m scripts.train --config train_warmstart.json --output-dir results/my-wa
 
 ## Part 2: Numerical simulation and evaluation
 
-If you have trained your own network through the above steps, you can skip to ['Prepare and verify evaluation inputs'](#prepare-and-verify-evaluation-inputs). Otherwise, you can also use the model weights we have trained. You can access these trained model weights using the following steps.
+If you have trained your own network through the above steps, you can skip to ['Prepare and verify evaluation inputs'](#prepare-and-verify-evaluation-inputs). Otherwise, you can use the model weights we have trained. You can access these trained model weights using the following steps.
 
 ### Obtain Supplied data and pretrained weights
 
@@ -160,17 +158,14 @@ Download `fthbf-data-v1.zip` and `fthbf-weights-v1.zip` from the
 [Google Drive download folder](https://drive.google.com/drive/folders/1zEdSEqWkpc1nvKUOKtuseE9iOGGQOOEe).
 **Extract each ZIP into the repository root, `FTHBF-public`.** For
 example, if your project is `H:\FTHBF-public`, choose that folder as the extraction
-destination for both archives. The downloaded ZIP files themselves can be stored
-anywhere; the extracted files must follow the layout below.
+destination for both archives.  
 
 | Archive | Extracted folder | Used for |
 | --- | --- | --- |
 | `fthbf-data-v1.zip` | `FTHBF-public/data_Probs/` | Training channels, system parameters, and evaluation datasets |
 | `fthbf-weights-v1.zip` | `FTHBF-public/checkpoints/` | Pretrained unfolded models with depths 2–7 |
 
-Each archive already contains its `data_Probs` or `checkpoints` folder. These
-folders must be directly inside `FTHBF-public`; if your extraction tool adds a
-wrapper folder named after the ZIP, move the inner folder to this location. The folder architecture has to be as follows.
+The folder architecture has to be as follows.
 
 ```text
 FTHBF-public/
@@ -233,7 +228,7 @@ files; regenerated data uses the separate checks described in [data preparation]
 
 ### Run the experiments
 
-After the checks pass, you can run the [supported paper experiments](#supported-experiments).
+After the checks pass, you can run the supported paper experiments.
 Open a notebook in JupyterLab or VS Code, select the project environment as its
 kernel, and run the cells in order. Alternatively, run it from the repository root:
 
@@ -252,14 +247,16 @@ Replace `Fig02.ipynb` with another supported notebook to run a different experim
 - `configs/artifacts.json`: checkpoint/data sizes, architectures, and SHA-256 hashes.
 - `reference_results/`: numeric curves extracted from the manuscript, labeled as references.
 
-Paths can be overridden with `FTHBF_DATA_DIR`, `FTHBF_CHECKPOINT_DIR`,
-`FTHBF_SCENARIO_DIR`, and `FTHBF_RESULT_DIR`. Relative overrides are resolved
-against the repository root. Generated results are kept outside versioned source.
-Each experiment records its configuration and environment in a `run.json` file.
 
 ## Citation and attribution
 
-Please cite the accompanying manuscript when using these implementations.
-Machine-readable citation information is in `CITATION.cff`; bibliographic
-publication identifiers can be added when available. The baseline implementations
-retain their literature references. See [third-party references](docs/ATTRIBUTION.md).
+If you use this code, or any modified part of it, in your work, please cite the following paper:
+
+```bibtex
+@article{zheng2026fast,
+  author  = {Zheng, Pinjun and Hossain, Md Jahangir and Chaaban, Anas},
+  title   = {Fast Tri-Hybrid Beamforming via Deep Unfolding},
+  journal = {IEEE Transactions on Signal Processing},
+  year    = {2026},
+  note    = {in press}
+}
