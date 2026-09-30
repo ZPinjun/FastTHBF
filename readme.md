@@ -4,7 +4,6 @@ This repository provides the code for reproducing the main results presented in 
 
 > [1] Pinjun Zheng, Md. Jahangir Hossain, and Anas Chaaban, “Fast Tri-Hybrid Beamforming via Deep Unfolding,” accepted for publication in IEEE Transactions on Signal Processing.
 
-### Paper Access
 - **IEEE Xplore:** coming soon
 - **Preprint (arXiv):** [arXiv:2608.27759](https://arxiv.org/abs/2608.27759)
 
