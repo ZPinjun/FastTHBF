@@ -1,4 +1,4 @@
-# FTHBF: Fast Tri-Hybrid Beamforming via Deep Unfolding
+# Fast Tri-Hybrid Beamforming via Deep Unfolding
 
 This repository provides the code for reproducing the main results presented in the following paper:
 
