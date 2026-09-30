@@ -4,6 +4,11 @@ This repository provides the code for reproducing the main results presented in 
 
 > [1] Pinjun Zheng, Md. Jahangir Hossain, and Anas Chaaban, “Fast Tri-Hybrid Beamforming via Deep Unfolding,” accepted for publication in IEEE Transactions on Signal Processing.
 
+### Paper Access
+- **IEEE Xplore:** coming soon
+- **Preprint (arXiv):** [arXiv:2608.27759](https://arxiv.org/abs/2608.27759)
+
+
 This repository supports the experiments listed below and is licensed under MIT. OpenAI Codex assisted with refactoring this codebase, improving its documentation, and preparing it for public release. The authors remain responsible for the reported results.
 
 ## Supported experiments
@@ -21,7 +26,7 @@ This repository supports the experiments listed below and is licensed under MIT.
 Fig. 5, the direct-GNN curve of Fig. 7, and the scalability experiments in
 Table IV were added in response to the reviewers’ requests. These results are not reproduced here, as the first author considers such repetition unnecessary. 
 
-## Two workflows: training and numerical evaluation
+## Two workflows: network training and numerical evaluation
 
 The code provides two parts:
 
